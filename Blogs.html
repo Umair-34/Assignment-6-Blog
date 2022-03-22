@@ -1,127 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="row">
-            <div class="col-md-2">
-                <div class="logo">
-                    <img src="https://via.placeholder.com/50x50" alt="logo-image">
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="navbar">
-                    <ul>
-                        <li><a href="./HomePage.html">Home</a></li>
-                        <li><a href="./Blogs.html">Blogs</a></li>
-                        <li><a href="./ContactUs.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="search">
-                    <form id="search-form">
-                        <input type="text" placeholder="Search ..." >
-                    </form>
-                </div>
-            </div>
+    <header class="header">
+        <a href="#" class="logo"><span>C</span>lassic <span>C</span>ars</a>
+
+        <nav class="navbar">
+            <a href="./HomePage.html">Home</a>
+            <a href="./Blogs.html">Blogs</a>
+            <a href="./ContactUs.html">Contact Us</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
         </div>
+
     </header>
 
+
     <br>
-    <section>
-        <div class="container">
-            <h1>Popular Blogs</h1>
-            <div class="row">
-                <div class="col-md-8">
-                    <article>
-                        <div class="img">
-                            <a href="#"><img width="400" height="180" src="https://cdn.pixabay.com/photo/2021/11/29/21/45/car-6833908_960_720.jpg" alt="blog-img"></a>
-                        </div>
-                        <div class="post">
-                            <h2><a href="#">Ford Mustang</a></h2>
-                        </div>
-                        <div class="content-preview">
-                            <p>A highly popular muscle and sports car, the Ford Mustang functions as a daily driver, weekend warrior, and a show winning work of mechanical...</p>
-                            <div class="read-more">
-                                <button onclick="window.location.href='#'"> Continue Reading</button>
-                            </div>
-                        </div>
-                    </article>
-                    <br>
-                    <article>
-                        <div class="img">
-                            <a href="#"><img width="400" height="180" src="https://cdn.pixabay.com/photo/2015/09/26/14/47/bentley-959192_960_720.jpg" alt="blog-img"></a>
-                        </div>
-                        <div class="post">
-                            <h2><a href="#">Rolls-Royce</a></h2>
-                        </div>
-                        <div class="content-preview">
-                            <p>Rolls Royce has been at the forefront of new and high end technology for many years and will continue ...</p>
-                            <div class="read-more">
-                                <button onclick="window.location.href='#'"> Continue Reading</button>
-                            </div>
-                        </div>
-                    </article>
-                    <br>
-                    <article>
-                        <div class="img">
-                            <a href="#"><img width="400" height="180" src="https://cdn.pixabay.com/photo/2018/04/22/17/24/porsche-911-3341711_960_720.jpg" alt="blog-img"></a>
-                        </div>
-                        <div class="post">
-                            <h2><a href="#">Porsche</a></h2>
-                        </div>
-                        <div class="content-preview">
-                            <p>Porsche's are the greatest production sports car in the world, Because of their manufacturing and production methods...</p>
-                            <div class="read-more">
-                                <button onclick="window.location.href='#'"> Continue Reading</button>
-                            </div>
-                        </div>
-                    </article>
+    <section style="margin-top: 5rem;" class="container" id="posts">
+
+        <div class="posts-container">
+            
+            <article class="post">
+                <img class="image"
+                        src="https://cdn.pixabay.com/photo/2021/11/29/21/45/car-6833908_960_720.jpg" alt="blog-img">
+                
+                <h3 class="title">Ford Mustang</h3>
+                <div class="date">
+                    <i class="far fa-clock"></i>
+                    <span>20th march, 2022</span>
                 </div>
-                <aside class="col-md-4">
-                    <div class="sidebar">
-                        <h4>Tags</h4>
-                        <div class="post_tags">
-                            <a href="#">Cars</a>
-                            <a href="#">Porsche</a>
-                            <a href="#">Rolls-Royce</a>
-                            <a href="#">Honda</a>
-                            <a href="#">Toyota</a>
-                        </div>
-                    </div>
-                </aside>
-            </div>
+                <p class="text">A highly popular muscle and sports car, the Ford Mustang functions as a daily driver, weekend warrior, and a show winning work of mechanical...</p>
+                <div class="read-more">
+                    <a href="#" class="btn"> Continue Reading</a>
+                </div>
+            </article>
+            <article class="post">
+                <img class="image"
+                        src="https://cdn.pixabay.com/photo/2015/09/26/14/47/bentley-959192_960_720.jpg" alt="blog-img">
+                
+                <h3 class="title">Rolls-Royce</h3>
+                <div class="date">
+                    <i class="far fa-clock"></i>
+                    <span>20th march, 2022</span>
+                </div>
+                <p class="text">Rolls Royce has been at the forefront of new and high end technology for many years and will continue ...</p>
+                <div class="read-more">
+                    <a href="#" class="btn"> Continue Reading</a>
+                </div>
+            </article>
+            <article class="post">
+                <img class="image"
+                        src="https://cdn.pixabay.com/photo/2018/04/22/17/24/porsche-911-3341711_960_720.jpg" alt="blog-img">
+               
+                <h3 class="title">Porsche</h3>
+                <div class="date">
+                    <i class="far fa-clock"></i>
+                    <span>20th march, 2022</span>
+                </div>
+                <p class="text">Porsche's are the greatest production sports car in the world, Because of their manufacturing and production methods...</p>
+                <div class="read-more">
+                    <a href="#" class="btn"> Continue Reading</a>
+                </div>
+            </article>
         </div>
-    </section>
-    <br>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <a href="index-2.html"><img src="https://via.placeholder.com/150x80" alt="logo-image"></a>
-                <p>All about cars blogs</p>
-            </div>
-            <div class="row">
-                <div class="follow_us">
-                    <ul>
-                        <li><a target="_blank" href="#"><i class="fa fa-facebook"></i>FACEBOOK</a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-twitter"></i>TWITTER</a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-youtube"></i>YOUTUBE</a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i>GOOGLE+</a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-instagram"></i>INSTAGRAM</a></li>
-                    </ul>
-                </div>
-                <div >
-                    <p>Copyright &copy; 2022. </p>
+        <aside class="sidebar">
+            <div class="box">
+                <h3 class="title">popular tags</h3>
+                <div class="tags">
+                    <a href="#">Cars</a>
+                    <a href="#">Porsche</a>
+                    <a href="#">Rolls-Royce</a>
+                    <a href="#">Honda</a>
+                    <a href="#">Toyota</a>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="box">
+                <h6 class="title">popular posts</h6>
+                <div class="p-post">
+                    <a href="#">
+                        <h3>Honda Civic 2022</h3>
+                        <span><i class="far fa-clock"></i>20th March, 2022</span>
+                    </a>
+                    <a href="#">
+                        <h3>Acura MDX</h3>
+                        <span><i class="far fa-clock"></i>20th March, 2022</span>
+                    </a>
+                    <a href="#">
+                        <h3>Toyota Camry</h3>
+                        <span><i class="far fa-clock"></i>20th March, 2022</span>
+                    </a>
+                   
+                </div>
+            </div>
+        </aside>
+    </section>    
+        <footer>
+            <section class="footer">
+               
+                <div class="follow">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+                <div class="credit">Copyright &copy; 2022. </div>
+    
+            </section>
+        </footer>
+    <script src="./static/js/custom.js"></script>
 
 </body>
 </html>
