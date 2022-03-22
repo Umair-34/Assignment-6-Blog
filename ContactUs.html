@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="row">
-            <div class="col-md-2">
-                <div class="logo">
-                    <img src="https://via.placeholder.com/50x50" alt="logo-image">
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="navbar">
-                    <ul>
-                        <li><a href="./HomePage.html">Home</a></li>
-                        <li><a href="./Blogs.html">Blogs</a></li>
-                        <li><a href="./ContactUs.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="search">
-                    <form id="search-form">
-                        <input type="text" placeholder="Search ..." >
-                    </form>
-                </div>
-            </div>
+    <header class="header">
+        <a href="#" class="logo"><span>C</span>lassic <span>C</span>ars</a>
+
+        <nav class="navbar">
+            <a href="./HomePage.html">Home</a>
+            <a href="./Blogs.html">Blogs</a>
+            <a href="./ContactUs.html">Contact Us</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
         </div>
+
     </header>
 
     <br>
-    <section id="contact_us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3> Contact <em>Infor</em></h3>
-                    <p>If you have any query feel free to contact me at following address</p>
-                    <ul>
-                        <li>Calgary AB, Canada</li>
-                        <li>+1 999-909-2890</li>
-                        <li>Contact@blog.com</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3> Ask A Question?</h3>
-                    <div class="contact_form">
-                        <form action="#" method="get">
-                            <label for="">Name </label>
-                                <input name="name" type="text" placeholder="Name">
-                            <label for="">Email </label>
-                                <input name="email" type="email" placeholder="Email Address">
-                            <label for="">Subject </label>
-                                <input name="subject" type="text" placeholder="Subject">
-                            <label for="">Message </label>
-                                <textarea name="" cols="" rows="" placeholder="Message"></textarea>
-                                <br>
-                                <input name="" type="submit" class="btn active_btn">
-                        </form>
-                    </div>
-                </div>
+    <section>
+
+        <div class="listing-hero">
+          <div class="hero-heading">
+              <div class="hero-large">Contact Us.</div>
+              <div class="hero-text"> <i>If you have any query feel free to contact us.</i> </div>       
             </div>
         </div>
-
-    </section>
+      
+      <div class="container-contact">
+          <div class="wrap-contact">
+      
+            <form name="contact" class="contact-form validate-form" method="post" action= "contact-form-handler.php">
+      
+              <div class="wrap-input validate-input" data-validate="Please enter your name">
+                <input class="input" type="text" name="name" placeholder="Full Name">
+              </div>
+      
+              <div class="wrap-input validate-input" data-validate = "Please enter your email">
+                <input class="input" type="text" name="email" placeholder="E-mail">
+              </div>
+      
+              <div class="wrap-input validate-input" data-validate = "Please enter your message">
+                <textarea class="input" type="text" name="message" placeholder="Your Message"></textarea>
+              </div>
+      
+              <div class="send-btn">
+                <input type="submit" value="send message" class="btn">
+              </div>
+      
+              <div class="grid-container">
+                <div class="item1 left-align"><i class="fa fa-lg fa-map-marker-alt"></i> Calgary AB, Canada</div>  
+                <div class="item4 right-align"><i class="fa fa-lg fa-phone"></i> (123) 456-7890<br> </div>
+            </div>
+      
+            </form>
+      
+          </div>
+        </div>
+      </div>
+      
+      </div>
+      
+      </section>
+      
+   
     <br>
     <footer>
-        <div class="container">
-            
-            <div class="row">
-                <a href="index-2.html"><img src="https://via.placeholder.com/150x80" alt="logo-image"></a>
-                <p>All about cars blogs</p>
-                <div class="follow_us">
-                    <ul>
-                        <li><a target="_blank" href="#"><i class="fa fa-facebook"></i>FACEBOOK</a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-twitter"></i>TWITTER</a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-youtube"></i>YOUTUBE</a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i>GOOGLE+</a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-instagram"></i>INSTAGRAM</a></li>
-                    </ul>
-                </div>
-                <div >
-                    <p>Copyright &copy; 2022. </p>
-                </div>
+        <section class="footer">
+           
+            <div class="follow">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
             </div>
-        </div>
+            <div class="credit">Copyright &copy; 2022. </div>
+
+        </section>
     </footer>
+    <script src="./static/js/custom.js"></script>
+
 </body>
 </html>
